@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bathroom Accesories
+    </title>
+    <style>
+        body {
+            font-family:"Roblox";
+            margin: 0px 80px 0px 80px;
+            padding: 0;
+            background-color: #bccccb;
+        }
+        .container {
+            background-color: #d0fff5;
+        }
+        .header { 
+            background-color: #93e4d2;
+            color: #0707075d;
+             padding: 1px;
+            text-align:center;
+            align-content: center;
+            margin: 0 0% 0 0%;
+        
+        }
+        .nav {
+            background-color: #444444;
+            overflow: hidden;
+        }
+        .nav a {
+            position: relative;
+            color: #fff;
+            text-decoration: none;
+            padding:  10px;
+            display:inline-block;
+            text-align: center;
+            font-weight: 400;
+
+ 
+        }
+        .nav a:hover {
+            background-color: #46816a;
+            color:rgb(248, 248, 251);
+        }
+        .main {
+            padding: 20px;
+            text-align: center;
+            
+            
+        }
+        
+    
+     
+
+        .gallery {
+            perspective: 1000px;
+        }
+
+        .gallery-container {
+            width: 500px;
+            height: 500px;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: rotate 15s infinite linear;
+        }
+
+        .gallery-image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+
+        .gallery-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .gallery-image:nth-child(1) {
+            transform: rotateY(0deg);
+        }
+
+        .gallery-image:nth-child(2) {
+            transform: rotateY(90deg);
+        }
+
+        .gallery-image:nth-child(3) {
+            transform: rotateY(180deg);
+        }
+
+        .gallery-image:nth-child(4) {
+            transform: rotateY(-90deg);
+        }
+
+        @keyframes rotate {
+            0% {
+                trasform: rotateY(0deg);
+            }
+
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+        @keyframes rotate{
+            0%{transform: rotateY(0deg);}
+            100%{transform: rotateY(360deg);}
+        }
+        .thumbnail-gallery{
+            display: flex;
+            margin: 50px 2px 50px 2px;
+            gap: 19px;
+            flex-wrap: wrap;
+        }
+        .thumbnail{
+            overflow: hidden;
+            border-radius: 8px;
+            transition:transform 0.3s;
+            width: 160px;
+            height: 60%;
+           
+        }
+        .thumbnail img{
+            width: 100%;
+            height: auto;
+            display: block;
+            
+        }
+        .thumbnail:hover{
+            transform: scale(1.3)
+        }
+        .description{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #efc1f0;
+            color:#151515  ;
+            text-align: center;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 10px;
+            padding:1px ;
+            opacity: 0;
+            transition: opacity 0.3s;
+            padding: auto;
+        }
+        .thumbnail:hover .description{
+            opacity: 2;
+          
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header" img src="Logo bathroom.png">
+        <h1>Yannah's Bathroom Accesories </h1>
+    </div>
+    <div class="nav">
+        <center>
+        <a href="Home.HTML">Home</a>
+        <a href="PRODUCTS.HTML">Products</a>
+        <a href="About Us.HTML">About Us</a>
+    </div>
+    
+    <div class="gallery">
+        <CENTER>
+                <div class="gallery-container">
+        <div class="gallery-image">
+                       <img src="2.png"
+                        alt="Hand Soap Pump">
+                       </div> 
+           <div class="gallery-image">
+                           <img src="19.png"
+                            alt="Holder Stand">
+                           </div> 
+       <div class="gallery-image">
+                            <img src="30.png" 
+                           alt="Body Brush"> 
+                       </div> 
+       <div class="gallery-image">
+                            <img src="21.png"
+                            alt="Mouthwash Pump">
+                        </CENTER>
+                            
+</div> 
+</div>
+</div>
+<div class="thumbnail-gallery">
+    
+    <div class="thumbnail"><a href="Face Sponge.HTML"><img src="1.png" alt="thumbnail 1"></a>
+    <div class="description">Face Sponge</div>
+    </div>
+    <div class="thumbnail"><a href="Hand Soap Pump.HTML"><img src="2.png" alt="thumbnail 2"></a>
+    <div class="description">Hand Soap Pump</div>
+    </div></a>
+    <div class="thumbnail"><a href="Back Scrubber.HTML"><img src="3.png" alt="thumbnail 3"></a>
+    <div class="description">Back Scrubber</div>
+    </div>
+    <div class="thumbnail"><a href="Silicon Brush.HTML"><img src="4.png" alt="thumbnail 4"></a>
+        <div class="description">Silicon Brush</div>
+
+        </div>
+        <div class="thumbnail"><a href="Bathroom Organizer.HTML"><img src="5.png" alt="thumbnail 5"></a>
+        <div class="description">Bathroom Organizer</div>
+        </div>
+   <div class="thumbnail"> <a href="Bath Pillow.HTML"><img src="6.png" alt="thumbnail 6"></a>
+        <div class="description">Bath Pillow</div>
+    </div>
+    <div class="thumbnail"><a href="Bath Robe.HTML"><img src="7.png" alt="thumbnail 1"></a>
+        <div class="description">Bath Robe</div>
+    </div>
+    <div class="thumbnail"><a href="Slippers.HTML"><img src="8.png" alt="thumbnail 2"></a>
+        <div class="description">Slippers</div>
+    </div>
+    <div class="thumbnail"><a href="Bathroom Rugs Carpet.HTML"><img src="9.png" alt="thumbnail 3"></a>
+        <div class="description">Bathroom Rugs Carpet</div>
+    </div>
+    <div class="thumbnail"><a href="Colagate.HTML"><img src="10.png" alt="thumbnail 4"></a>
+        <div class="description">Colgate</div>
+    </div>
+    <div class="thumbnail"><a href="Cotton Buds.HTML"><img src="11.png" alt="thumbnail 5"></a>
+        <div class="description">Cotton Buds</div>
+    </div>
+    <div class="thumbnail"><a href="Dove.HTML"><img src="12.png" alt="thumbnail 6"></a>
+        <div class="description">Dove</div>
+    </div>
+    <div class="thumbnail"><a href="Foot Scrubberr.HTML"><img src="13.png" alt="thumbnail 1"></a>
+        <div class="description">Foot Scrubber</div>
+    </div>
+    <div class="thumbnail"><a href="Trash Bin.HTML" ><img src="14.png" alt="thumbnail 2"></a>
+        <div class="description">Trash Bin</div>
+    </div>
+    <div class="thumbnail"><a href="Hair Comb.HTML"><img src="15.png" alt="thumbnail 3"></a>
+        <div class="description">Hair Comb</div>
+    </div>
+    <div class="thumbnail"><a href="Hair Dryer.HTML"><img src="16.png" alt="thumbnail 4"></a>
+        <div class="description">Hair Dryer</div>
+    </div>
+
+    <div class="thumbnail"><a href="Head Bands.HTML"><img src="17.png" alt="thumbnail 5"></a>
+        <div class="description">Head Bands</div>
+    </div>
+    <div class="thumbnail"><a href="Hand Dryer.HTML"><img src="18.png" alt="thumbnail 6"></a>
+        <div class="description">Hand Dryer</div>
+    </div>
+    <div class="thumbnail"><a href="Holder Stand.HTML"><img src="19.png" alt="thumbnail 1"></a>
+        <div class="description">Holder Stand</div>
+    </div>
+    <div class="thumbnail"><a href="Listerine.HTML"><img src="20.png" alt="thumbnail 2"></a>
+        <div class="description">Listerine</div>
+    </div>
+    <div class="thumbnail"><a href="Mouthwash.HTML"><img src="21.png" alt="thumbnail 3"></a>
+        <div class="description">Mouthwash</div>
+    </div>
+    <div class="thumbnail"><a href="Shower Caddy.HTML"><img src="22.png" alt="thumbnail 4"></a>
+        <div class="description">Shower Caddy</div>
+    </div>
+    <div class="thumbnail"><a href="SHower Cap.HTML"><img src="23.png" alt="thumbnail 5"></a>
+        <div class="description">Shower Cap</div>
+    </div>
+    <div class="thumbnail"><a href="Shower Head.HTML"><img src="24.png" alt="thumbnail 6"></a>
+        <div class="description">Shower Head</div>
+    </div>
+    <div class="thumbnail"><a href="Tootbrush.HTML"><img src="25.png" alt="thumbnail 1"></a>
+        <div class="description">Tootbrush</div>
+    </div>
+   <div class="thumbnail"> <a href="towel.HTML"><img src="26.png" alt="thumbnail 2"></a>
+        <div class="description">Towel</div>
+    </div>
+    <div class="thumbnail"><a href="Garbage Bin.HTML"><img src="27.png" alt="thumbnail 3"></a>
+        <div class="description">Garbage Bin</div>
+    </div>
+    <div class="thumbnail"><a href="Vanity Mirror.HTML"><img src="28.png" alt="thumbnail 4"></a>
+        <div class="description">Vanity Mirror</div>
+    </div>
+    <div class="thumbnail"><a href="Gloves Sponge.HTML"><img src="29.png" alt="thumbnail 5"></a>
+        <div class="description">Gloves Sponge</div>
+    </div>
+<div class="thumbnail"><a href="Loofah Sponge.HTML"><img src="30.png" alt="thumbnail 6"></a>
+        <div class="description">Loofah Sponge</div>
+    </div>
+    <div class="content"> </div>
+</div> 
+</div>
+
+
+  </body>
+</html>
